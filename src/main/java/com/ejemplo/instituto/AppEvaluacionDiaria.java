@@ -17,7 +17,6 @@ public class AppEvaluacionDiaria {
 
     public static void main(String[] args) {
         Connection con = JbdcUtil.getConnection();
-        JbdcUtil.executeUpdate("BD/datosPruebas.sql", con);
         AlumnoDAO alumnoDAO = new AlumnoDAOImpl(con);
         RegistroDAO registroDAO = new RegistroDAOImpl(con);
 
